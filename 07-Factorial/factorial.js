@@ -8,4 +8,15 @@
  * @returns {Number} - deberia retornar un number.
  */
 
-function factorial(num) {}
+function factorial(num) {
+    if (num < 1) {
+        return 0;
+      } else {
+        if (num === 1) {
+          return 1;
+        } else {
+        return num * nFactorial (n - 1)
+      }
+     }
+     }
+
