@@ -12,4 +12,15 @@
  * @returns {boolean} - deberia retornar true o false.
  */
 
-function validAnagram(first, second) {}
+function validAnagram(first, second) {
+    let first = first.toLowerCase.split('').sort().join('');
+    let second = second.toLowerCase.split('').sort().join('');
+    return s === t;
+}
+// if (first.length !== second.length) {return false}
+//else {
+    //for (let i = 0; i < first.length; i++)
+    //for (let j = 0; j < second.length; j++)
+    // if (first.chartAt(i)) === second.charAt(j)) {return true};
+    //{return false}
+    //}}
