@@ -7,4 +7,22 @@
  * @returns {Number} - deberia retornar un number.
  */
 
-function productOfArray(arr) {}
+function productOfArray(arr) {
+    var resultado = 0;
+    for (let i = 0; i < arr.length; i++) {
+     for (let j = i + 1; j < arr.length; j++) {
+         resultado = resultado * arr[i] * arr[j];
+     }   
+    }
+    return resultado;
+}
+
+//function productOfArray(arr) {
+    //if (arr.length === 0) return 1;
+    //return arr[0] * productOfArray(arr.slice(1));
+  //}
+  
+  
+  // * El método slice() devuelve una copia de una parte del array dentro de un nuevo array
+  // * empezando por inicio hasta fin (fin no incluido). El array original no se modificará.
+  // * arr.slice([inicio [, fin]])
